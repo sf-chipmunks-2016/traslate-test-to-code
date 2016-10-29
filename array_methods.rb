@@ -15,3 +15,19 @@ def tight_zip(a,b)
     a.zip(b).flatten.reject { |element| element.nil? || element == '' || element == [] }
   end
 end
+
+def first_duplicate(arr)
+  arr.detect{ |element| arr.count(element) > 1 }
+end
+
+def symbolize(arr)
+  arr.map {|element| element.to_sym }
+end
+
+def index_of_max(arr)
+  arr.rindex(arr.max)
+end
+
+def merge(arr)
+  final_hash = Hash[*arr.collect{|h| h.to_a}.flatten]
+end
