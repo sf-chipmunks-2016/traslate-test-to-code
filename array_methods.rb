@@ -5,3 +5,10 @@ end
 def average(arr)
   arr.reduce(:+) / arr.size.to_f 
 end
+
+def super_compact(arr)
+  arr.reject { |element| element.nil? || element == '' || element == [] }
+end
+
+# def tight_zip(a,b)
+#   end
