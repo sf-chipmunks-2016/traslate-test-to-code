@@ -10,5 +10,8 @@ def super_compact(arr)
   arr.reject { |element| element.nil? || element == '' || element == [] }
 end
 
-# def tight_zip(a,b)
-#   end
+def tight_zip(a,b)
+  if a.length != b.length
+    a.zip(b).flatten.reject { |element| element.nil? || element == '' || element == [] }
+  end
+end
