@@ -50,8 +50,14 @@ end
 def first_duplicate(array)
   array.detect { |element| array.count(element) > 1 }
 end
-  # it "returns first duplicate in an array" do
-  #   arr = %w|b c d c a a a|
-  #   expect(first_duplicate(arr)).to eq "c"
-  # end
+
+def symbolize(array)
+  array.map { |element| element.to_sym }
+end
+# describe "symbolize" do
+#   it "creates an array of symbols" do
+#     arr = %w|b c d c a|
+#     expected = [:b, :c, :d, :c, :a]
+#     expect(symbolize(arr)).to eq expected
+#   end
 
