@@ -29,4 +29,16 @@ def average(array)
   sum = array.inject(:+)
   average = sum.fdiv(count)
   average
+
+  # array.reduce(0) {|sum, n| }
 end
+
+def super_compact(array)
+  array.reject { |item| item.nil? || item == '' || item == [] }
+end
+  # it "removes nil and empty elements" do
+  #   arr = [:bob, "", nil, [], "joe"]
+  #   expected = [:bob, "joe"]
+  #   expect(super_compact(arr)).to eq expected
+  # end
+
