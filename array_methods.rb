@@ -59,10 +59,43 @@ def index_of_max(array)
   array.index(array.max)
 end
 
-# describe "index_of_max" do
-#   it "returns index of largest array element" do
-#     arr = [1, 99, 10, 104, 5]
-#     expect(index_of_max(arr)).to eq 3
-#   end
+def merge(array)
+    # array.each do |one_hash|
+    #   one_hash.flatten
+      # one_hash.inject(:merge)
+    # end
+    # Hash[*array]
+
+    # array.each_with_index do |hash, index|
+    #   hash.each |key, value|
+    #     p key
+    #     p value
+      # key << array[index]
+      # p array
+      # p index
+      # p array[index]
+#     end
+#     # p key
 # end
 
+  array.each do |hash|
+    hash.each do |key, value|
+      hash[key] << value
+    end
+  end
+
+end
+# describe "merge" do
+#   it "converts array of hashes to a hash" do
+#     arr = [
+#       { a: 1, b: 2 },
+#       { a: 3, b: 24, c: 4 }
+#     ]
+#     expected = {
+#       a: [1, 3],
+#       b: [2, 24],
+#       c: [4]
+#     }
+#     expect(merge(arr)).to eq expected
+#   end
+# end
