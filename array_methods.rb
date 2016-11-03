@@ -5,23 +5,17 @@
 #   ELSE == false
 
 def has_string?(array)
-  # array.each do |item|
-  #   if item.grep(/"/)
-  #     return true
-  #   else
-  #     return false
-  #   end
-  # end
+# .select
+# .include?
 
-# array.include? :(/"/)
-  # ("\n")
-  # .grep to find something
 
-# array.any? { |item| 
-  #if item is a symbol, move on
-  #if item is an integer, move on 
-#   item.include?("") }
-# array.select { |item| item == string }
+  array.each do |element|
+    # p x.class
+    return true if element.class == String
+  end
+
+  false
+
 end
 
 def average(array)
@@ -78,13 +72,13 @@ def merge(array)
 #     # p key
 # end
 
-  array.each do |hash|
-    hash.each do |key, value|
-      hash[key] << value
-    end
-  end
+#   array.each do |hash|
+#     hash.each do |key, value|
+#       hash[key] << value
+#     end
+#   end
 
-end
+# end
 # describe "merge" do
 #   it "converts array of hashes to a hash" do
 #     arr = [
@@ -99,3 +93,18 @@ end
 #     expect(merge(arr)).to eq expected
 #   end
 # end
+
+result = {}
+# result = Hash.new(Array.new)
+# p result
+array.each do |hash|
+  hash.each do |key, value|
+    array = []
+    result[key] = array << value
+  end
+# p result.merge
+end
+
+# iterate over array - each element is a hash
+# 
+end
