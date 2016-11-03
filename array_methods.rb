@@ -47,3 +47,11 @@ def tight_zip(a,b)
   a.insert(3,b[1])
 end
 
+def first_duplicate(array)
+  array.detect { |element| array.count(element) > 1 }
+end
+  # it "returns first duplicate in an array" do
+  #   arr = %w|b c d c a a a|
+  #   expect(first_duplicate(arr)).to eq "c"
+  # end
+
