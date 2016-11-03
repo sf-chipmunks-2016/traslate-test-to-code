@@ -54,10 +54,15 @@ end
 def symbolize(array)
   array.map { |element| element.to_sym }
 end
-# describe "symbolize" do
-#   it "creates an array of symbols" do
-#     arr = %w|b c d c a|
-#     expected = [:b, :c, :d, :c, :a]
-#     expect(symbolize(arr)).to eq expected
+
+def index_of_max(array)
+  array.index(array.max)
+end
+
+# describe "index_of_max" do
+#   it "returns index of largest array element" do
+#     arr = [1, 99, 10, 104, 5]
+#     expect(index_of_max(arr)).to eq 3
 #   end
+# end
 
