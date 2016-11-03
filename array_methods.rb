@@ -42,3 +42,8 @@ end
   #   expect(super_compact(arr)).to eq expected
   # end
 
+def tight_zip(a,b)
+  a.insert(1,b[0])
+  a.insert(3,b[1])
+end
+
