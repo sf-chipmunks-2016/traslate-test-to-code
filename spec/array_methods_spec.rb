@@ -56,12 +56,12 @@ describe "symbolize" do
 end
 
 
-describe "index_of_max" do
-  it "returns index of largest array element" do
-    arr = [1, 99, 10, 104, 5]
-    expect(index_of_max(arr)).to eq 3
-  end
-end
+# describe "index_of_max" do
+#   it "returns index of largest array element" do
+#     arr = [1, 99, 10, 104, 5]
+#     expect(index_of_max(arr)).to eq 3
+#   end
+# end
 
 
 describe "merge" do
