@@ -8,3 +8,8 @@ def has_string?(array)
   end
   false
 end
+
+def average(array)
+  new_array = array.reduce(0) {|sum, num| sum + num}
+  new_array.to_f/array.length.to_f
+end
