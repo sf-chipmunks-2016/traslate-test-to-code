@@ -75,6 +75,7 @@ describe "merge" do
       b: [2, 24],
       c: [4]
     }
+
     expect(merge(arr)).to eq expected
   end
 end
