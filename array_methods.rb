@@ -20,3 +20,26 @@ end
 def first_duplicate(arr)
 	 arr.detect { |element| arr.count(element) > 1 }
 end 
+
+def symbolize(arr)
+	arr.map { |element| element.to_sym }
+end 
+
+def index_of_max(arr)
+	arr.index(arr.max)
+end 
+
+def merge(arr)
+	result = {}
+	 arr.each do |item|
+	   item.each do |key, value|
+	     if result.has_key?(key)
+	       result[key] << value
+	     else
+	       result[key] = [value]
+	     end
+	   end
+	 end
+	result
+end 
+
